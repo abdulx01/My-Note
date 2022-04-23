@@ -1,10 +1,10 @@
-            SQLMAP - Tryhackme 
-            ------------------
+#                                                                      SQLMAP - Tryhackme 
+            
 
 Sqlmap Command:
     
  See help:-        sqlmap -h    for advanced help: -hh
-
+```bash
  abdul@rahman$ sqlmap -h
         ___
        __H__
@@ -12,7 +12,7 @@ Sqlmap Command:
 |_ -| . [(]     | .'| . |
 |___|_  [']_|_|_|__,|  _|
       |_|V...       |_|   https://sqlmap.org
-
+```
 Usage: python3 sqlmap [options]
 
 Options:
