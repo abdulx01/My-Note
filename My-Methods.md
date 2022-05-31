@@ -2,16 +2,14 @@
 
 
 **First Choose a target**
-	- **Subdomain Enumeration**
-	- **Fuzzing**
-	- **Google Dorks**
-	- **Github Gorks**
-	- **Shodan**
-
-### For manual testing - 
+	 **Subdomain Enumeration**
+	 **Fuzzing**
+	 **Google Dorks**
+	 **Github Gorks**
+	 **Shodan**
 
 ###	1- Subdomain Enumeration :-
--		- **First Step to Find subdoma of target**.
+		- **First Step to Find subdoma of target**.
 			Use *Subfinder*, *asset-finder*, *findomain*
 		- **DNS Recon**
 
@@ -22,21 +20,20 @@
 		- *Find subdomain on certs.sh website*
 		- *See some automation tips on twitter*
 
-### 2- Fuzzing
--		
-		- Use *ffuf* :
-		- Dirsearch 
-		- Use *scilla* also for Enumeration
+### 2- Fuzzing		
+   	- Use *ffuf* :
+	- Dirsearch 
+	- Use *scilla* also for Enumeration
 
 ### 3- Google Gork:
 
-*	  - *See some google checklist*
-	  - *Use faisalahmad site for google dorking*
+     *See some google checklist*
+     *Use faisalahmad site for google dorking*
 
 ### 4- Github dork:- 
--
-	  - *Use google check-list for Github dork*
-	  - *You can use automatino for Github dork*
+
+       *Use google check-list for Github dork*
+       *You can use automatino for Github dork*
 
 ### 5- Shodan:-
 -
