@@ -1,4 +1,4 @@
-openapi: 3.0.n
+swagger: "2.0"
 info:
   title: AbdulRahman 
   description: |
